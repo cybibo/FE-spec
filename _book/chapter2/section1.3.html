@@ -1,0 +1,902 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Git同一项目使用多个远程仓库 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter3/README.md" />
+    
+    
+    <link rel="prev" href="section1.2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    道枢前端组开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    1.小组规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/section1.0.html">
+            
+                <a href="../chapter1/section1.0.html">
+            
+                    
+                    HTML编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/section1.8.html">
+            
+                <a href="../chapter1/section1.8.html">
+            
+                    
+                    CSS编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/section1.1.html">
+            
+                <a href="../chapter1/section1.1.html">
+            
+                    
+                    javascript代码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/section1.2.html">
+            
+                <a href="../chapter1/section1.2.html">
+            
+                    
+                    PC页面制作规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter1/section1.3.html">
+            
+                <a href="../chapter1/section1.3.html">
+            
+                    
+                    Webpack项目架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter1/section1.9.html">
+            
+                <a href="../chapter1/section1.9.html">
+            
+                    
+                    前端技术通用架构图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../chapter1/section1.4.html">
+            
+                <a href="../chapter1/section1.4.html">
+            
+                    
+                    前端部署说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../chapter1/section1.6.html">
+            
+                <a href="../chapter1/section1.6.html">
+            
+                    
+                    LOGO、ICON图片资源管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2.Git使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="section1.1.html">
+            
+                <a href="section1.1.html">
+            
+                    
+                    Git服务使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="section1.2.html">
+            
+                <a href="section1.2.html">
+            
+                    
+                    GitLab里的命名规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="section1.3.html">
+            
+                <a href="section1.3.html">
+            
+                    
+                    Git同一项目使用多个远程仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/README.md">
+            
+                <span>
+            
+                    
+                    3.Vue教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter3/section1.1.html">
+            
+                <a href="../chapter3/section1.1.html">
+            
+                    
+                    组件中写选项的顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/README.md">
+            
+                <span>
+            
+                    
+                    4.组件库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/section1.4.html">
+            
+                <a href="../chapter4/section1.4.html">
+            
+                    
+                    道枢组件库操作使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/section1.1.html">
+            
+                <a href="../chapter4/section1.1.html">
+            
+                    
+                    分享组件小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/section1.2.html">
+            
+                <a href="../chapter4/section1.2.html">
+            
+                    
+                    微信授权项目开发流程详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/section1.3.html">
+            
+                <a href="../chapter4/section1.3.html">
+            
+                    
+                    移动端网站微信授权的处理方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter5/README.md">
+            
+                <span>
+            
+                    
+                    5.组件总结
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/section1.1.html">
+            
+                <a href="../chapter5/section1.1.html">
+            
+                    
+                    分享组件小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/section1.2.html">
+            
+                <a href="../chapter5/section1.2.html">
+            
+                    
+                    微信授权项目开发流程详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter5/section1.3.html">
+            
+                <a href="../chapter5/section1.3.html">
+            
+                    
+                    移动端网站微信授权的处理方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter6/README.md">
+            
+                <span>
+            
+                    
+                    6.项目总结
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter6/section1.1.html">
+            
+                <a href="../chapter6/section1.1.html">
+            
+                    
+                    项目1总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter9/chapter1.html">
+            
+                <a href="../chapter9/chapter1.html">
+            
+                    
+                    7.javascript进阶一
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter9/chapter2.html">
+            
+                <a href="../chapter9/chapter2.html">
+            
+                    
+                    javascript进阶二
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter9/chapter3.html">
+            
+                <a href="../chapter9/chapter3.html">
+            
+                    
+                    javascript进阶三
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter9/chapter4.html">
+            
+                <a href="../chapter9/chapter4.html">
+            
+                    
+                    javascript进阶四
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter9/chapter5.html">
+            
+                <a href="../chapter9/chapter5.html">
+            
+                    
+                    javascript进阶五
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter9/chapter6.html">
+            
+                <a href="../chapter9/chapter6.html">
+            
+                    
+                    javascript进阶六
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../chapter9/chapter7.html">
+            
+                <a href="../chapter9/chapter7.html">
+            
+                    
+                    javascript进阶七
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../chapter9/chapter8.html">
+            
+                <a href="../chapter9/chapter8.html">
+            
+                    
+                    javascript进阶八
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../chapter9/chapter9.html">
+            
+                <a href="../chapter9/chapter9.html">
+            
+                    
+                    javascript进阶九
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../chapter9/chapter10.html">
+            
+                <a href="../chapter9/chapter10.html">
+            
+                    
+                    javascript进阶十
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../chapter9/chapter11.html">
+            
+                <a href="../chapter9/chapter11.html">
+            
+                    
+                    javascript进阶十一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../chapter9/chapter12.html">
+            
+                <a href="../chapter9/chapter12.html">
+            
+                    
+                    javascript进阶十二
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../chapter9/chapter13.html">
+            
+                <a href="../chapter9/chapter13.html">
+            
+                    
+                    javascript进阶十三
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../chapter9/chapter14.html">
+            
+                <a href="../chapter9/chapter14.html">
+            
+                    
+                    javascript进阶十四
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../chapter9/chapter15.html">
+            
+                <a href="../chapter9/chapter15.html">
+            
+                    
+                    javascript进阶十五
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../chapter9/chapter16.html">
+            
+                <a href="../chapter9/chapter16.html">
+            
+                    
+                    javascript进阶十六
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="../chapter9/chapter17.html">
+            
+                <a href="../chapter9/chapter17.html">
+            
+                    
+                    javascript进阶十七
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="../chapter9/chapter18.md">
+            
+                <span>
+            
+                    
+                    javascript进阶十八
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="../chapter9/chapter19.md">
+            
+                <span>
+            
+                    
+                    javascript进阶十九
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Git同一项目使用多个远程仓库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="git&#x540C;&#x4E00;&#x9879;&#x76EE;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;">Git&#x540C;&#x4E00;&#x9879;&#x76EE;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;</h1>
+<p>&#x67D0;&#x4E9B;&#x573A;&#x5408;&#xFF0C;&#x4E00;&#x4E2A;git&#x9879;&#x76EE;&#x9700;&#x8981;&#x80FD;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x751A;&#x81F3;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x6BD4;&#x5982;&#x516C;&#x53F8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;gitlab&#x4ED3;&#x5E93;&#xFF0C;&#x65B0;&#x667A;&#x90A3;&#x8FB9;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;gitlab&#x4ED3;&#x5E93;&#x6216;&#x8005;&#x6211;&#x4EEC;&#x540E;&#x671F;&#x4F1A;&#x5206;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x548C;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x7B49;&#x3002;&#x5728;&#x9879;&#x76EE;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x67E5;&#x770B;git&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code>$ cat .git/config 
+[core]
+ repositoryformatversion = 0
+ filemode = false
+ bare = false
+ logallrefupdates = true
+ symlinks = false
+ ignorecase = true
+ hideDotFiles = dotGitOnly
+ [remote &quot;origin&quot;] 
+url = git@10.168.4.20:daoshuFE/FE-xxxxx.git 
+fetch = +refs/heads/*:refs/remotes/origin/*
+ [branch &quot;master&quot;]
+ remote = origin
+ merge = refs/heads/master
+</code></pre><p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;git&#x7684;config&#x914D;&#x7F6E;&#xFF0C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;  </p>
+<ol>
+<li>&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;<br>&#x4FEE;&#x6539;config&#x6587;&#x4EF6;&#xFF0C;&#x52A0;&#x5165;&#x53E6;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x5E76;&#x4E3A;&#x5176;&#x547D;&#x540D;&#xFF0C;&#x6BD4;&#x5982;&#x79F0;&#x4E3A;mirror&#xFF1A;<pre><code>[remote &quot;origin&quot;]
+url = git@10.168.4.20:daoshuFE/FE-xxxxx.git 
+fetch = +refs/heads/*:refs/remotes/origin/*
+[remote &quot;mirror&quot;]
+url = git@10.39.39.18:daoshuFE/FE-xxxxx.git 
+fetch = +refs/heads/*:refs/remotes/origin/*
+[branch &quot;master&quot;]
+remote = origin
+remote = mirror
+merge = refs/heads/master
+</code></pre></li>
+</ol>
+<p>&#x64CD;&#x4F5C;&#x4E4B;&#x524D;&#x5207;&#x8BB0;&#xFF1A;&#x65B0;&#x667A;&#x90A3;&#x8FB9;&#x7684;gitlab&#x5E93;&#x6211;&#x4EEC;&#x8981;&#x6253;&#x5F00;vpn&#x5E76;&#x4E14;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x540E;&#x624D;&#x80FD;&#x64CD;&#x4F5C;  </p>
+<ol>
+<li><p>pull&#x64CD;&#x4F5C;<br>&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x4ECE;&#x4E24;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;pull&#xFF1A;  </p>
+<pre><code>git pull origin master  
+git pull mirror master
+</code></pre></li>
+<li><p>push&#x64CD;&#x4F5C;<br>&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x522B;push&#x5230;&#x4E24;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF1A;  </p>
+<pre><code>git push origin master
+git push mirror master
+</code></pre></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section1.2.html" class="navigation navigation-prev " aria-label="Previous page: GitLab里的命名规范">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter3/README.md" class="navigation navigation-next " aria-label="Next page: 3.Vue教程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Git同一项目使用多个远程仓库","level":"1.3.3","depth":2,"next":{"title":"3.Vue教程","level":"1.4","depth":1,"path":"chapter3/README.md","ref":"chapter3/README.md","articles":[{"title":"组件中写选项的顺序","level":"1.4.1","depth":2,"path":"chapter3/section1.1.md","ref":"chapter3/section1.1.md","articles":[]}]},"previous":{"title":"GitLab里的命名规范","level":"1.3.2","depth":2,"path":"chapter2/section1.2.md","ref":"chapter2/section1.2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/section1.3.md","mtime":"2018-11-01T09:08:33.977Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-13T06:07:26.529Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
